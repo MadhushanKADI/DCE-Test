@@ -1,0 +1,17 @@
+.navbar {
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    span {
+      padding-right: 1rem;
+      
+      button {
+        font-size: 18px;
+      }
+
+      .active{
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  

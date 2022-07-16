@@ -1,0 +1,16 @@
+<div class="dialog-container">
+    <h2 mat-dialog-title> Update User</h2>
+    <form>
+        <mat-dialog-content>
+            <mat-form-field appearance="standard">
+                <mat-label>First Name</mat-label>
+                <input [(ngModel)]="name" name="name" matInput placeholder="Want to change your name?">
+            </mat-form-field>
+        </mat-dialog-content>
+        
+        <mat-dialog-actions>
+            <button mat-button (click)="isNull()">Save</button>
+            <button mat-button mat-dialog-close>Cancel</button>
+        </mat-dialog-actions>
+    </form> 
+</div>

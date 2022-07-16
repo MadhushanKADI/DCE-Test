@@ -1,0 +1,38 @@
+table {
+  width: 90%;
+  margin: 0 auto;
+
+  img {
+    object-fit: cover;
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  .mat-row{
+    transition: 500ms;
+  }
+
+  .mat-row:hover{
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: hsla(0, 0%, 0%, 0.1);
+    transition: 100ms;
+  }
+}
+
+.flex-container{
+  display: flex;
+  
+
+  div {
+    flex: 33.33%;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.flex-wraper{
+  margin: 0 auto;
+  width: 200px;
+}

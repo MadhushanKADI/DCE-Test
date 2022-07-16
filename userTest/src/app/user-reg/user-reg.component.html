@@ -1,0 +1,17 @@
+<div class="reg-wraper">
+    <div class="reg-form">
+        <h1>Registration Form</h1>
+        <form>
+            <mat-form-field appearance="standard">
+                <mat-label>Name</mat-label>
+                <input [(ngModel)]="nameInput" name="name" matInput placeholder="Enter Your Name">
+            </mat-form-field>
+
+            <mat-form-field appearance="standard">
+                <mat-label>Job</mat-label>
+                <input [(ngModel)]="jobInput" name="job" matInput placeholder="Enter Your Job">
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="addUser()" >Register Me</button>
+        </form>
+    </div>
+</div>

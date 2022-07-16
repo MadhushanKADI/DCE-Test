@@ -1,0 +1,33 @@
+.reg-form {
+    width: 80vw;
+    max-width: 700px;
+    margin: 20vh auto;
+    padding: 20px 20px;
+    border: 0px rgba(0, 0, 0, 0.5) solid;
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px 2px #88888853;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    // input {
+    //     width: 100%;
+    //     margin-bottom: 10px;
+    //     height: 35px;
+    //     padding-left: 5px;
+    //     border: 0px solid rgba(0, 0, 0, 0.5);
+    //     border-radius: 5px;
+    //     box-shadow: 3px 4px 10px 2px #88888853;
+    //     box-sizing: border-box;
+    // }
+
+    button{
+        width: 100%;
+    }
+
+    mat-form-field{
+        width: 100%;
+    }
+}
