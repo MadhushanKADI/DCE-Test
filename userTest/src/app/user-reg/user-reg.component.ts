@@ -19,21 +19,14 @@ export class UserRegComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  // getuserData(data:any){
-  //   console.warn(data);
-  //   this._userService.adduser(data).subscribe((result) => {
-  //     console.warn(result);
-  //     this.snackBar.open("User Successfully Inserted!!", "OK", {duration: 5000});
-  //   });
-  // }
   
   addUser(){
     if(this.nameInput != "" && this.jobInput != ""){
-      console.log(this.nameInput + " " + this.jobInput);
+      // console.log(this.nameInput + " " + this.jobInput);
 
       let data = {name: this.nameInput, job: this.jobInput};
       this._userService.adduser(data).subscribe((result) => {
-        console.warn(result);
+        // console.warn(result);
         this.snackBar.open("User Successfully Inserted!!", "OK", {duration: 5000});
       });
 

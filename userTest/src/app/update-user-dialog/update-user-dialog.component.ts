@@ -18,11 +18,11 @@ export class UpdateUserDialogComponent implements OnInit {
   }
 
   isNull(){
-    console.log(this.name);
+    // console.log(this.name);
     if (this.name != ""){
       let data = {name: this.name, job: ""};
       this._userService.updateUser(data).subscribe((result) => {
-        console.warn(result);
+        // console.warn(result);
         this.snackBar.open("User Successfully Updated!!", "OK", {duration: 2000});
         this.dialogRef.close();
     });

@@ -47,7 +47,7 @@ export class UserIndexComponent implements OnInit {
 
   removeUser(id:number){
     this._userService.deleteUser(id).subscribe((result) => {
-      console.warn(result);
+      // console.warn(result);
       let snakbarRef = this.snackBar.open("User Successfully Deleted!!", "ok", {duration: 1500});
     
       snakbarRef.afterDismissed().subscribe(() => {
@@ -58,7 +58,7 @@ export class UserIndexComponent implements OnInit {
   }
 
   updateUser(element:any){
-    console.log(element.id);
+    // console.log(element.id);
     this._userService.setId(element.id);
     this.dialog.open(UpdateUserDialogComponent);
   }
